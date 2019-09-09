@@ -49,11 +49,11 @@ class Song
 
   def self.new_from_filename(filename)
 
-    artist = filename.split(" - ")[0]
-    name = (filename.split(" - ")[1])
-    genre = (filename.split(" - ")[2])
+    a = filename.split(" - ")[0]
+    n = (filename.split(" - ")[1])
+    g = (filename.split(" - ")[2])
     #Song - name artist genre
-    self.new(name, artist, genre)
+    self.new(n, a, g)
     end
 
 end
