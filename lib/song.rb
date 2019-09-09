@@ -22,8 +22,8 @@ class Song
   end
 
   def create
-    save.Song.new
-    return self
+    Song.new.save
+
   end
 
 end
