@@ -51,7 +51,7 @@ class Song
 
     a = filename.split(" - ")[0]
     name = (filename.split(" - ")[1])
-    g = (filename.split(" - ")[2])
+    g = (filename.split(" - ")[2]).gsub(".mp3", "")
     #Song - name artist genre
     artist = Artist.find_or_create_by_name(a)
     genre = Genre.find_or_create_by_name(g)
