@@ -21,7 +21,7 @@ class Song
     self.all.clear
   end
 
-  def create(name)
+  def self.create(name)
     song = Song.new(name)
     song.save
     song
