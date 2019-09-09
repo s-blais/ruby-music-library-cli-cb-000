@@ -5,5 +5,4 @@ module Concerns::Findable
   end
 
 
-
 end
