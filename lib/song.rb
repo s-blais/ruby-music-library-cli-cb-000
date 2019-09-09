@@ -53,6 +53,9 @@ class Song
     n = (filename.split(" - ")[1])
     g = (filename.split(" - ")[2])
     #Song - name artist genre
+    artist = Artist.find_or_create_by_name(a)
+    genre = Genre.find_or_create_by_name(g)
+
     self.new(n, a, g)
     end
 
