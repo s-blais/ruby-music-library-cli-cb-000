@@ -30,7 +30,7 @@ class Artist
   def add_song(song)
     song.artist ||= self
     #song.artist = self
-    @songs << song
+    @songs << song if @songs.any? == song
   end
 
 end
