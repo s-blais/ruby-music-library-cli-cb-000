@@ -23,13 +23,19 @@ class MusicLibraryController
     end
   end
 
-  def list_songs
+  # def list_songs
+  #   counter = 0
+  #   list = Song.all.collect {|song| song.name}
+  #   list.sort
+  #   list.each do
+  #     puts "#{counter}. #{song_name}"
+  #   end
+
+  def list_song
     counter = 0
-    list = Song.all.collect {|song| song.name}
-    list.sort
-    list.each do |song_name|
-      counter += 1
-      puts "#{counter}. #{song_name}"
+    list = Song.all.collect.sort
+    list.each do |song|
+      puts "#{counter}. #{song}"
     end
 
 
