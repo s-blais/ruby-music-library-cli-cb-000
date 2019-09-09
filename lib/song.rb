@@ -28,8 +28,8 @@ class Song
     song
   end
 
-  def artist=(artist)
-    Artist.add_song
-  end
+  # def artist=(artist)
+  #   Artist.add_song
+  # end
 
 end
