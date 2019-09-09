@@ -10,16 +10,16 @@ class Song
     @@all << self
   end
 
-  def self.all
-    @@all
-  end
-
-  def save
-    self.all << self
-  end
-
-  def self.destroy_all
-    self.all.clear
-  end
+  # def self.all
+  #   @@all
+  # end
+  #
+  # def save
+  #   self.all << self
+  # end
+  #
+  # def self.destroy_all
+  #   self.all.clear
+  # end
 
 end
