@@ -53,7 +53,7 @@ class Song
     name = (filename.split(" - ")[1])
     genre = (filename.split(" - ")[2])
     #Song - name artist genre
-    self.new(artist, name, genre)
+    self.new(name, artist, genre)
     end
 
 end
