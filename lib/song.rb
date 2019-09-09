@@ -21,10 +21,10 @@ class Song
     self.all.clear
   end
 
-  def create
+  def self.create
     song = Song.new
     song.save
-    return song
+    song
   end
 
 end
