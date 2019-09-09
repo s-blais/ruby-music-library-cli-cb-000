@@ -22,7 +22,8 @@ class Song
   end
 
   def create
-    save.Song.new.tap
+    save.Song.new
+    self
   end
 
 end
