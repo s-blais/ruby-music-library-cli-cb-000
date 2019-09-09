@@ -32,4 +32,8 @@ class Artist
     @songs << song if @songs.none?(song)
   end
 
+  def genres
+    self.songs.collect.uniq {|song| song.genre}
+  end
+
 end
