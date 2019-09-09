@@ -23,7 +23,7 @@ class Song
 
   def create
     save.Song.new
-    self
+    return self
   end
 
 end
