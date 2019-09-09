@@ -1,0 +1,25 @@
+class Song
+
+  attr_accessor :name
+
+  @@all = []
+
+  def initialize(name)
+    song = Song.new
+    @name = name
+    self.all << song
+  end
+
+  def self.all
+    @@all
+  end
+
+  def save
+    self.all << self
+  end
+
+  def self.destroy_all
+    self.all.clear
+  end
+
+end
