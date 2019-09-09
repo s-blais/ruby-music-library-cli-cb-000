@@ -27,4 +27,9 @@ class Genre
     genre
   end
 
+  def add_song(song)
+    song.genre ||= self
+    @songs << song if @songs.none?(song)
+  end
+
 end
